@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+
+        let arrayKosong = [];
+
+        let arrayNama = ["Muhammad", "Febrian", "Syah"];
+
+        document.writeln(arrayNama[0]);
+
+        const names = [];
+        names.push("Muhammad");
+        names.push("Febrian", "Syah");
+
+        console.table(names);
+        console.info(names[0]);
+        console.info(names[1]);
+        console.info(names[2]);
+
+        names[0] = "Programmer";
+        names[1] = "Zaman";
+        names[2] = "Now";
+
+        console.table(names);
+
+        delete names[1];
+
+        console.table(names);
+        
+        names.push("Eko Lagi");
+        
+        console.table(names);
+        
+        names[1] = "Diubah";
+        names.push(1,2,3,4,5);
+        names.nama = "Rian";
+
+        console.table(names);
+        </script>
+</body>
+</html>
