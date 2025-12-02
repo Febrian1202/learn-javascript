@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Method</title>
+</head>
+<body>
+    <script>
+
+        // Bisa juga seperti ini
+        // function sayHello(name){
+        //     alert(`Hello ${name}`);
+        // }
+
+        // const person = {
+        //     name: "Febrian",
+        //     sayHello: sayHello
+        // };
+
+        // const person = {
+        //     name: "Febrian",
+        //     sayHello: function (name){
+        //         alert(`Hello ${name}`)
+        //     }
+        // };
+        
+        const person = {
+            name: "Febrian",
+            
+        };
+        
+        person.sayHello = function (name) {
+            console.log(`Hello ${name}`);
+        }
+
+        person.sayHello("Ridaz")
+
+    </script>
+</body>
+</html>
