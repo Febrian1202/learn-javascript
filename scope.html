@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+
+        // global scope
+        let counter = 0;
+
+        function hitMe(){
+            // local scope hitMe
+            counter++;
+        }
+
+        hitMe();
+        hitMe();
+
+        console.info(counter);
+
+        function first(){
+            // tidak bisa mengakses inner scope
+            // local scope first
+            let firstVariable = "First";
+
+            function firstNested(){
+                // bisa mengakses outer scope
+                console.info(firstVariable);
+            }
+            
+            firstNested();
+        }
+        function second(){
+            // local scope second
+            let firstVariable = "Second";
+            console.info(firstVariable);
+        }
+
+        first();
+        second();
+
+        // console.info(firstVariable);
+        // console.info(secondVariable);
+
+    </script>
+</body>
+</html>

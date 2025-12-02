@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    // const sayHello = (name) => {
+    //     const say = `Hello ${name}`;
+    //     return say;
+    // }
+
+    const sayHello = name => console.info(`Hello ${name}`);
+
+    sayHello("Ridaz");
+
+    const sum = (first, second) => first + second;
+
+    console.info(sum(10, 15));
+
+    function giveMeName(callback){
+        callback("Ridaz");
+    }
+
+    giveMeName((name) => console.log(`Halo ${name}`));
+
+</script>
+</body>
+</html>

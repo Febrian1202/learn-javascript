@@ -6,6 +6,21 @@
     <title>With Statement</title>
 </head>
 <body>
-    
+    <script>
+        const person = {
+            firstName: "Muhammad",
+            middleName: "Febrian",
+            lastName: "Syah"
+        }
+
+        const firstName = "Budi";
+        const lastName = "Nugraha";
+
+        with (person) {
+            document.writeln(firstName);
+            document.writeln(middleName);
+            document.writeln(lastName);
+        }
+    </script>
 </body>
 </html>
