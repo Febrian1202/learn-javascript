@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Operator</title>
+</head>
+<body>
+    <script>
+
+        const person = {
+            firstName : "Febrian",
+            middleName : undefined,
+            lastName : "Syah"
+        }
+
+        if("middleName" in person) {
+            alert(`Hello ${person.middleName}`)
+        } else {
+            alert("Hello Person");
+        }
+
+        const names = [null, "Febrian", null];
+        const result = 0 in names;
+        alert(`Result of checking if 0 is in names: ${result}`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perulangan For In</title>
+</head>
+<body>
+    <script>
+
+        const person = {
+            firstName: "Muhammad",
+            middlename: "Febrian",
+            lastName: "Syah"
+        };
+
+        for (const property in person) {
+            document.writeln(`<p>${property} : ${person[property]}</p>`);
+        }
+
+        const names = ["Muhammad", "Febrian", "Syah"];
+        for(const index in names) {
+            document.writeln(`<p>${index} : ${names[index]}</p>`)
+        }
+
+    </script>
+</body>
+</html>
